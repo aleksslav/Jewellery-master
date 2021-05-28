@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Cart Online store of handmade Jewellery">
+    <title>Jewellery Cart</title>
+    <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <main class="page-cart">
+      <section class="cart modal modal--nojs">
+        <h1 class="visually-hidden">Cart for purchases</h1>
+        <div class="cart__wrapper">
+          <a href="card.html" class="modal__close" aria-label="Close modal window"></a>
+          <h2>The item was added to your cart</h2>
+          <div class="cart__picture">
+            <picture>
+              <source srcset="img/card/necklace-detail-small-desktop@1x.webp 1x, img/card/necklace-detail-small-desktop@2x.webp 2x" type="image/webp">
+              <!-- 1x: 84px; 2x: 168px -->
+              <img src="img/card/necklace-detail-small-desktop@1x.jpg" srcset="img/card/necklace-detail-small-desktop@2x.jpg 2x" width="84" height="79" alt="Necklace detail">
+            </picture>
+            <div class="cart__picture-title">
+              <h2>Gold Necklace</h2>
+              <p>$ 115</p>
+            </div>
+            <div class="cart__picture-counter">
+              <button class="cart__count-button cart__count-button--plus" type="button" aria-label="Increase the number"></button>
+              <label class="visually-hidden" for="count">Count of selected items</label>
+              <input type="text" id="count" name="count" value="1" readonly="" tabindex="-1">
+              <button class="cart__count-button cart__count-button--minus" type="button" aria-label="Reduce the number"></button>
+            </div>
+          </div>
+          <div class="cart__description">
+            <p>You have 1 item in the cart</p>
+            <p>Cart subtotal: <span>$ 115</span></p>
+          </div>
+          <div class="cart__links">
+            <a class="cart__link button button--white" href="catalog.html">Continue shopping</a>
+            <a class="cart__link button button--brown" href="#">Checkout</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script src="js/main.js"></script> 
+  </body>
+</html>
